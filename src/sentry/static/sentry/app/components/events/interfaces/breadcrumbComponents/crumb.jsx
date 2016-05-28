@@ -26,7 +26,10 @@ const CrumbComponent = React.createClass({
     // TODO: find a better way to customize UI around non-schema data
     if (crumb.category && crumb.category.slice(0, 3) === 'ui.') {
       rv += ' crumb-user';
+    } else if (crumb.category && crumb.category === 'navigation') {
+      rv += ' crumb-location';
     }
+
     return rv;
   },
 
