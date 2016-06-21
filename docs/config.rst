@@ -43,7 +43,7 @@ General
 
 .. describe:: system.url-prefix
 
-    Declared in ``config.yml``.
+    Declared in ``config.yml``. Docker environment variable ``SENTRY_ADMIN_EMAIL``.
 
     The URL prefix in which Sentry is accessible. This will be used both for
     referencing URLs in the UI, as well as in outbound notifications.
@@ -54,7 +54,7 @@ General
 
 .. describe:: system.secret-key
 
-    Declared in ``config.yml``.
+    Declared in ``config.yml``. Docker environment variable ``SENTRY_SECRET_KEY``.
 
     A secret key used for session signing. If this becomes compromised it's
     important to regenerate it as otherwise its much easier to hijack user
@@ -103,7 +103,7 @@ Mail
 
 .. describe:: mail.from
 
-    Declared in ``config.yml``.
+    Declared in ``config.yml``. Docker environment variable ``SENTRY_SERVER_EMAIL``.
 
     The email address used for outbound email in the ``From`` header.
 
@@ -112,7 +112,7 @@ Mail
 
 .. describe:: mail.host
 
-    Declared in ``config.yml``.
+    Declared in ``config.yml``. Docker environment variable ``SENTRY_EMAIL_HOST``.
 
     The hostname to connect to for SMTP connections.
 
@@ -120,7 +120,7 @@ Mail
 
 .. describe:: mail.port
 
-    Declared in ``config.yml``.
+    Declared in ``config.yml``. Docker environment variable ``SENTRY_EMAIL_PORT``.
 
     The port to connect to for SMTP connections.
 
@@ -128,7 +128,7 @@ Mail
 
 .. describe:: mail.username
 
-    Declared in ``config.yml``.
+    Declared in ``config.yml``. Docker environment variable ``SENTRY_EMAIL_USER``.
 
     The username to use when authenticating with the SMTP server.
 
@@ -136,7 +136,7 @@ Mail
 
 .. describe:: mail.password
 
-    Declared in ``config.yml``.
+    Declared in ``config.yml``. Docker environment variable ``SENTRY_EMAIL_PASSWORD``.
 
     The password to use when authenticating with the SMTP server.
 
@@ -144,7 +144,7 @@ Mail
 
 .. describe:: mail.use-tls
 
-    Declared in ``config.yml``.
+    Declared in ``config.yml``. Docker environment variable ``SENTRY_EMAIL_USE_TLS``.
 
     Should Sentry use TLS when connecting to the SMTP server?
 
